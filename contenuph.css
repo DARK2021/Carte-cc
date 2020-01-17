@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .header{
+    height: 100px;
+    background: #1e5b99;
+    padding: 0 20px;
+    color: #fff;
+  }
+  .logo{
+    color: #fff;
+    line-height: 100px;
+    float: left;
+    text-transform: uppercase;
+  }
+  body{
+    background: #313840;
+  }
+  
+  .menu{
+    float: right;
+    line-height: 100px;
+  }
+  .menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+  }
+  .show-menu-btn,.hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  .show-menu-btn{
+    float: right;
+  }
+  .show-menu-btn i{
+    line-height: 100px;
+  }
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover{
+    color: #3498db;
+  }
+  
+  #chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+  }
+  
+  .content{
+    padding: 0 20px;
+  }
+  .content img{
+    width: 100%;
+    max-width: 700px;
+    margin: 20px 0;
+  }
+  .content p{
+    text-align: justify;
+  }
+  
+  @media screen and (max-width:800px) {
+    .show-menu-btn,.hide-menu-btn{
+      display: block;
+    }
+    .menu{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #333;
+      right: -100%;
+      top: 0;
+      text-align: center;
+      padding: 80px 0;
+      line-height: normal;
+      transition: 0.7s;
+    }
+    .menu a{
+      display: block;
+      padding: 20px;
+    }
+    .hide-menu-btn{
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+    #chk:checked ~ .menu{
+      right: 0;
+    }
+  }
+  .phs1{
+    color: tomato;
+    font-size: 40px;;
+  }
+  .phs2{
+    color: #3498db;
+    font-size: 40px;;
+  }
+  .phs{
+
+    font-size: 15px;
+    font-family: "montserrat";
+    color: tomato;;
+  }
+
+  
+  .container{
+
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-table{
+    background: #f1f1f1;
+    flex: 1;
+    margin: 10px;
+    text-transform: uppercase;
+  }
+  
+  .pricing-header{
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .price{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+  }
+   
+  .prices{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 0;
+  }
+  .prices1{
+    margin-left: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 19px 0;
+  }
+  .prices2{
+    margin-left: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+  }
+  
+  .price span{
+    font-size: 30px;
+  }
+  
+  .title{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 80%;
+    max-width: 360px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+  
+  .pricing-list{
+    padding: 10px 20px;
+  }
+  
+  .pricing-list li{
+    margin: 8px 0;
+    font-size: 14px;
+    color: #344;
+    text-align: center;
+  }
+  
+  .border{
+    width: 80px;
+    height: 1px;
+    background: #ddd;
+    margin: auto;
+  }
+  
+  .pricing-table a{
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    border: 1px solid;
+    max-width: 360px;
+    transition: .2s linear;
+  }
+  .pricing-table a:hover{
+    border-radius: 30px;
+  }
+  .table1 .pricing-header{
+    background: #2980b9;
+  }
+  .table2 .pricing-header{
+    background: #2c3e50;
+  }
+  .table3 .pricing-header{
+    background: #c0392b;
+  }
+  .table4 .pricing-header{
+    background: indigo
+  }
+  
+  .table1 .title{
+    background-image: linear-gradient(125deg,#3498db,#9b59b6);
+  }
+  .table2 .title{
+    background-image: linear-gradient(125deg,#34495e,#95a5a6);
+  }
+  .table3 .title{
+    background-image: linear-gradient(125deg,#e74c3c,#f39c12);
+  }
+  .table4 .title{
+    background-image: linear-gradient(125deg,#3498db,#9b59b6);
+  }
+  
+  .table1 a{
+    color: #2980b9;
+  }
+  .table2 a{
+    color: #2c3e50;
+  }
+  .table3 a{
+    color: #c0392b;
+  }
+  .table4 a{
+    color: indigo;
+  }
+  .table1 a:hover{
+    background: #2980b9;
+    color: #fff;
+  }
+  .table2 a:hover{
+    background: #2c3e50;
+    color: #fff;
+  }
+  .table3 a:hover{
+    background: #c0392b;
+    color: #fff;
+  }
+  .table4 a:hover{
+    background: indigo;
+    color: #fff;
+  }
+  
+  @media screen and (max-width:780px) {
+    .pricing-table{
+      flex: 100%;
+    }
+  }
+  .les{
+    padding-top: 20px;
+    color: tomato;
+    font-size: 40px;
+    margin-left: 700px;
+  }
+  .les:hover{
+    color: transparent;
+  }

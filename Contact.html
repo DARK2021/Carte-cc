@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="Contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="icon" type="image/png" href="https://static.wixstatic.com/media/8f0cb4_6378e67d765e465e99fe576138eaf5f7.png/v1/fill/w_471,h_428,al_c,q_80,usm_0.66_1.00_0.01/8f0cb4_6378e67d765e465e99fe576138eaf5f7.webp" />
+  </head>
+  <body>
+        <div class="header">
+            <a href="./Page d'acceuil.html"><h2 class="logo">  <span class="ph1">C</span>arte  <span class="ph1">C</span>onceptuelle  <span class="ph">sc Physique</span></h2></a>
+                <input type="checkbox" id="chk">
+                <label for="chk" class="show-menu-btn">
+                  <i class="fas fa-ellipsis-h"></i>
+                </label>
+            
+                <ul class="menu">
+                  <a href="./Présentation.html">Présentation</a>
+                  <a href="./Contact.html">Contact</a>
+                  <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                  </label>
+                </ul>
+              </div>
+    <form class="contact-section" id="contact-section">
+      <div class="inner-width">
+        <h1 class="sn">
+                PRENEZ CONTACT AVEC NOUS</h1>
+        <input type="text" class="name" id="name" placeholder="Nom">
+        <input type="email" class="email" id="email" placeholder="Email">
+        <textarea rows="1" placeholder="Message"  class="message" id="message"></textarea>
+ 
+          
+      
+        <button  type="submit" id="submitButton"> Envoyer </button>
+      </div>
+    </form>
+   
+   <hr>
+   <br><br>
+   
+    <center><h2 class="sn">
+        Suivez nous</h2>
+            <div class="social-buttons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </center>
+  </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.6.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.6.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+  <script src="Contact.js"></script>
+</html>
+
+  
